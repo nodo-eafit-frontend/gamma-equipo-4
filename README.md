@@ -1,3 +1,22 @@
+# Proyecto Filantropía - Equipo 4
+
+Rediseño de la página de Filantropía Eafit. Para la construcción de este proyecto se utilizará Angular. 
+
+
+### Para contribuir al proyecto
+- Cree en la carpeta de su usuario una carpeta para alojar el proyecto.
+- Clone en la carpeta creada este repositorio (Es necesario tener las llaves públicas y privadas creadas en la raiz de su usuario y vinculadas a GitHub para usar el comando) con `git clone git@github.com:nodo-eafit-frontend/gamma-equipo-4.git`
+- Baje la rama *development*  a los archivos locales con el comando `git pull origin development`
+- Muevase a la rama *development* con `git checkout development`
+
+Y estas listo para codear y contibuir!
+
+
+------------
+
+
+------------
+
 # PhilanthropyPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
