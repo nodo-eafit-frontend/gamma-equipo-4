@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <div class="navbar__container">
+    <div class="navbar__logo">
+      <a routerLink="/">
+        <img [src]="navbar.logo.src" [alt]="navbar.logo.alt">
+      </a>
+    </div>
+    <div>
+      <a routerLink="/donations"> {{ navbar.donate }} </a>
+      <a routerLink=""> {{ navbar.certificate }} </a>
+      <a routerLink=""> {{ navbar.frequentQuestions }} </a>
+      <a routerLink=""> {{ navbar.reports }} </a>
+      <a routerLink=""> {{ navbar.contact }} </a>
+    </div>
+  </div>
+</nav>
