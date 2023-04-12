@@ -1,17 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from './molecules/navbar/navbar.component'
-import { AnchordonationsComponent } from './atoms/anchordonations/anchordonations.component'
+import { RouterModule } from '@angular/router';
+import {MatCardModule} from '@angular/material/card';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+
+
+import { NavbarComponent } from './molecules/navbar/navbar.component'
+import { AnchordonationsComponent } from './atoms/anchordonations/anchordonations.component';
+import { CardscausesComponent } from './molecules/cardscauses/cardscauses.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    AnchordonationsComponent
+    AnchordonationsComponent,
+    CardscausesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatCardModule,
+    RouterModule,
+    FontAwesomeModule
   ],
-  exports: [NavbarComponent, AnchordonationsComponent]
+  exports: [NavbarComponent, AnchordonationsComponent, CardscausesComponent]
 })
 export class ComponentsModule { }

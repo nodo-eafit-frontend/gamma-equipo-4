@@ -1,0 +1,25 @@
+<div class="cards">
+  <a *ngFor="let cardcause of cardsCauses" routerLink="" >
+    <mat-card class="cards__causes">
+      <div class="cards__image">
+        <img mat-card-image [src]="cardcause.img" [alt]="cardcause.alt">
+      </div>
+      <mat-card-header>
+        <mat-card-title> {{ cardcause.title }} </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p> {{ cardcause.description }} </p>
+      </mat-card-content>
+      <div class="cards__footer">
+        <mat-card-actions >
+          <span>más información</span>
+        </mat-card-actions>
+        <mat-card-actions >
+        <fa-icon [icon]="faArrowRight" ></fa-icon>
+      </mat-card-actions>
+      </div>
+    </mat-card>
+  </a>
+</div>
+
+
