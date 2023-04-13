@@ -1,5 +1,5 @@
 <div class="cards">
-  <a *ngFor="let cardcause of cardsCauses" routerLink="" >
+  <a *ngFor="let cardcause of cardsCauses" [routerLink]="cardcause.routerLink" >
     <mat-card class="cards__causes">
       <div class="cards__image">
         <img mat-card-image [src]="cardcause.img" [alt]="cardcause.alt">

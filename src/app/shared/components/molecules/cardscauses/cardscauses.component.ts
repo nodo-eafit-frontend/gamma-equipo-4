@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faArrowRight, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-cardscauses',
@@ -9,7 +9,7 @@ import { faArrowRight, faCoffee } from '@fortawesome/free-solid-svg-icons'
 export class CardscausesComponent {
 
   faArrowRight = faArrowRight;
-  faCoffee = faCoffee;
+
 
   cardsCauses = [
     {
@@ -17,11 +17,11 @@ export class CardscausesComponent {
       img: '../../assets/image/img-card-equidad-social.png',
       description: 'Estudiantes con oportunidades a través de becas y apoyos económicos',
       alt: 'Imagen de equidad social e inclusión',
-      routerLink: '/'
+      routerLink: '/donations'
     },
     {
       title: 'Ciencia, tecnología e innovación',
-      img: '../../assets/image/img-card-equidad-social.png',
+      img: '../../assets/image/img-card-science.png',
       description: 'Apalancamos proyectos de investigación científica y aplicada para beneficio de la humanidad',
       alt: 'Imagen de ciencia, tecnología e innovación',
       routerLink: '/'
@@ -35,7 +35,7 @@ export class CardscausesComponent {
     },
     {
       title: 'Inspiración - voluntariado',
-      img: '../../assets/image/img-card-transformacion-hum.png',
+      img: '../../assets/image/img-card-volunteering.png',
       description: 'Conectamos talento eafitense para un mayor impacto en las iniciativas sociales',
       alt: 'Imagen de inspriación y voluntariado',
       routerLink: '/'
