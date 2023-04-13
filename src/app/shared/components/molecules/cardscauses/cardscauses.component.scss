@@ -4,8 +4,9 @@
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-
-
+  position: absolute;
+  z-index: 20;
+  top: 130px;
 
   &__causes {
     max-width: 260px;
