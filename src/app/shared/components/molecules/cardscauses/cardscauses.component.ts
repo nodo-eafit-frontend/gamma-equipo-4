@@ -17,7 +17,7 @@ export class CardscausesComponent {
       img: '../../assets/image/img-card-equidad-social.png',
       description: 'Estudiantes con oportunidades a través de becas y apoyos económicos',
       alt: 'Imagen de equidad social e inclusión',
-      routerLink: '/donations'
+      routerLink: '/'
     },
     {
       title: 'Ciencia, tecnología e innovación',
