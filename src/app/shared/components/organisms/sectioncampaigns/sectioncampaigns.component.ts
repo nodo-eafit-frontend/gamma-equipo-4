@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IcarouselItem } from './Icarousel-item.metadata';
 import {  faCircleChevronLeft, faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-sectioncampaigns',
@@ -12,14 +12,14 @@ export class SectioncampaignsComponent implements OnInit {
 
   faCircleChevronLeft = faCircleChevronLeft;
   faCircleChevronRight = faCircleChevronRight;
-  videoUrlCampaing1: SafeResourceUrl;
+  videoUrlCampaing1: SafeUrl;
 
 
-  @Input() height = 700;
+  @Input() height = 100;
   @Input() isFullScreen = false;
 
   constructor (private sanitizer: DomSanitizer) {
-    this.finalHeight = this.isFullScreen? '100vh' : `${this.height}px`;
+    this.finalHeight = this.isFullScreen? '100vh' : `${this.height}vh`;
     this.videoUrlCampaing1 = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/DcrtCEfsAxc");
   }
 
@@ -31,7 +31,8 @@ export class SectioncampaignsComponent implements OnInit {
       description: 'Con tus aportes logramos que más jovenes continuen con sus estudios universitarios',
       image: '../../../assets/image/img-carousel-vamos-pa-lante.png',
       backgroundColor: '#FFFEF8',
-      date: 'Fecha de apertura de la campaña'
+      date: 'Fecha de apertura de la campaña',
+      class: 'carousel__content--center',
     },
     {
       id: 2,
@@ -40,7 +41,8 @@ export class SectioncampaignsComponent implements OnInit {
       description: 'Juntos logramos posibilidades que transforman vidas ¡Gracias por volar con nosotros!',
       image: '../../../assets/image/img-carousel-giving.png',
       backgroundColor: '#09394C',
-      date: 'Fecha de apertura de la campaña'
+      date: 'Fecha de apertura de la campaña',
+      class: 'carousel__content--center',
     },
     {
       id: 3,
@@ -52,6 +54,8 @@ export class SectioncampaignsComponent implements OnInit {
       date: 'Fecha de apertura de la campaña'
     }
   ];
+
+
 
 
   finalHeight: string | number = 0;

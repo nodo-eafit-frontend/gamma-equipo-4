@@ -11,4 +11,5 @@ export interface IcarouselItem {
   order?: number;
   marginLeft?: number;
   backgroundColor: string;
+  class?: string;
 }

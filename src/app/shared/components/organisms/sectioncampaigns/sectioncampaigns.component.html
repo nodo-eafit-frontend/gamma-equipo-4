@@ -4,36 +4,64 @@
     <fa-icon [icon]="faCircleChevronRight" (click)="setNext()"></fa-icon>
   </div>
   <div class="carousel__content">
-   <ng-container *ngFor="let section of items">
-      <section class="carousel__content--item" [ngStyle]="{'background': section.backgroundColor, 'margin-left': section.marginLeft + '%' } ">
-        <header><h2> {{ section.title }} </h2></header>
+    <ng-container>
+      <section class="carousel__content--item"
+        [ngStyle]="{'background': items[0].backgroundColor, 'margin-left': items[0].marginLeft + '%' } ">
+        <header>
+          <h2> {{ items[0].title }} </h2>
+        </header>
         <div class="carousel__content--center">
-          <div >
-            <img [src]="section.image" alt="Image Vamos Pa Lante">
-            <h3> {{ section.campaing }} </h3>
+          <div>
+            <img [src]="items[0].image" alt="Image Vamos Pa Lante">
+            <h3> {{ items[0].campaing }} </h3>
           </div>
-          <iframe width="560" height="315" [src]="videoUrlCampaing1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="560" height="315" [src]="videoUrlCampaing1" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
-        <p> {{ section.description }} </p>
-        <span> {{ section.date }} </span>
+        <p> {{ items[0].description }} </p>
+        <span> {{ items[0].date }} </span>
       </section>
-   </ng-container>
-   <ng-container>
-    <section class="carousel__content--item" [ngStyle]="{'background': items[2].backgroundColor, 'margin-left':  items[2].marginLeft + '%' } ">
-      <header><h2> {{  items[2].title }} </h2></header>
-      <div>
-        <div>
-          <img src="" alt="">
-          <h3></h3>
+    </ng-container>
+    <ng-container>
+      <section class="carousel__content--item"
+        [ngStyle]="{'background': items[1].backgroundColor, 'margin-left': items[1].marginLeft + '%' } ">
+        <header>
+          <h2> {{ items[1].title }} </h2>
+        </header>
+        <div class="carousel__content--center">
+          <div>
+            <img [src]="items[1].image" alt="Image Vamos Pa Lante">
+            <h3> {{ items[1].campaing }} </h3>
+          </div>
+          <iframe width="560" height="315" [src]="videoUrlCampaing1" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
-      </div>
-      <p> {{  items[2].description }} </p>
-      <span></span>
-    </section>
- </ng-container>
+        <p> {{ items[1].description }} </p>
+        <span> {{ items[1].date }} </span>
+      </section>
+    </ng-container>
+    <ng-container>
+      <section class="carousel__content--item"
+        [ngStyle]="{'background': items[2].backgroundColor, 'margin-left':  items[2].marginLeft + '%' } ">
+        <header>
+          <h2> {{ items[2].title }} </h2>
+        </header>
+        <div>
+          <div>
+            <img [src]="items[2].image" alt="Imagen Productos Eafitenses">
+            <h3></h3>
+          </div>
+        </div>
+        <p> {{ items[2].description }} </p>
+        <span></span>
+      </section>
+    </ng-container>
   </div>
   <div class="carousel__steps">
-    <div class="carousel__steps--step carousel__steps--step-{{ currentPosition === item.id? 'active' : '' }}"   *ngFor="let item of items" (click)="setCurrentPosition(item.id)" >
+    <div class="carousel__steps--step carousel__steps--step-{{ currentPosition === item.id? 'active' : '' }}"
+      *ngFor="let item of items" (click)="setCurrentPosition(item.id)">
     </div>
   </div>
 </div>
