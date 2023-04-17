@@ -13,6 +13,8 @@ export class SectioncampaignsComponent implements OnInit {
   faCircleChevronLeft = faCircleChevronLeft;
   faCircleChevronRight = faCircleChevronRight;
   videoUrlCampaing1: SafeUrl;
+  videoUrlCampaing2: SafeUrl;
+
 
 
   @Input() height = 100;
@@ -21,6 +23,7 @@ export class SectioncampaignsComponent implements OnInit {
   constructor (private sanitizer: DomSanitizer) {
     this.finalHeight = this.isFullScreen? '100vh' : `${this.height}vh`;
     this.videoUrlCampaing1 = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/DcrtCEfsAxc");
+    this.videoUrlCampaing2 = this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/NpUUfkPnwzQ");
   }
 
   @Input() items: IcarouselItem[] = [
