@@ -6,7 +6,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     height: 100%;
     width: 100%;
     position: absolute;
@@ -20,39 +20,74 @@
     align-self: stretch;
     display: flex;
     overflow: hidden;
+    font-family: "Poppins", sans-serif;
 
     &--item {
-        float: left;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
-        min-width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        transition: all 1s ease;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: all 1s ease;
 
-        h2 {
-          color: black;
-          font-weight: 900;
-          text-transform: uppercase;
-        }
-
-        p {
-          color: black;
-          font-weight: 500;
-          font-size: 20px;
-        }
+      h2 {
+        color: black;
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 10%;
       }
+
+      img {
+        height: 300px;
+        width: 320px;
+        border-radius: 50%;
+        z-index: 1;
+        margin: 5%;
+      }
+
+      iframe {
+        height: 320px;
+        width: 400px;
+      }
+
+      h3 {
+        position: absolute;
+        height: 30px;
+        width: 160px;
+        border-radius: 20;
+        background-color: #54b6bf;
+        z-index: 10;
+        top: 380px;
+        margin-left: 8%;
+      }
+
+      p {
+        width: 100%;
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+        justify-content: center;
+        margin-left: 12%;
+      }
+
+      span {
+        color: black;
+        margin-left: 50%;
+      }
+    }
 
     &--center {
       display: flex;
+      width: 90%;
+      justify-content: space-evenly;
+      align-items: center;
     }
   }
-
-
 
   &__btns {
     position: absolute;
@@ -63,38 +98,38 @@
 
     > fa-icon {
       opacity: 0.7;
-      color: #A7D9DE;
+      color: #a7d9de;
       font-size: 45px;
       cursor: pointer;
       justify-content: space-between;
 
       &:hover {
-        color: #54B6BF
+        color: #54b6bf;
       }
     }
   }
 
   &__steps {
     position: absolute;
-     bottom: 40px;
-     width: 100%;
-     display: flex;
-     justify-content: center;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-     &--step {
+    &--step {
       height: 8px;
       width: 25px;
       margin: 0 5px;
       border-radius: 5px;
-      border: 1px solid #A7D9DE;
+      border: 1px solid #a7d9de;
       cursor: pointer;
       transition: 0.75s all ease-in-out;
 
-      &:hover, &-active {
+      &:hover,
+      &-active {
         opacity: 0.7;
-        background: #54B6BF;
+        background: #54b6bf;
       }
-     }
+    }
   }
 }
-

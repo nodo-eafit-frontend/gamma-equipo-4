@@ -1,4 +1,3 @@
-
 export interface IcarouselItem {
   id: number;
   title: string;
