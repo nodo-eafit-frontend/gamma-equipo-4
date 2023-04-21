@@ -56,12 +56,13 @@ export class SectioncampaignsComponent implements OnInit {
     {
       id: 3,
       title: 'CAMPAÑAS EAFITENSES',
-      campaing: 'PRODUCTOS CON SENTIDO',
+      campaing: 'Productos con sentido EAFITENSE',
       description:
         'Por la compra de nuestros productos apoyas al fondo de becas universitarias',
       image: '../../../assets/image/img-carousel-products.png',
       backgroundColor: '#004D71',
       date: 'Fecha de apertura de la campaña',
+      imageInfo: '../../../assets/image/img-carousel-information-products.png',
     },
   ];
 

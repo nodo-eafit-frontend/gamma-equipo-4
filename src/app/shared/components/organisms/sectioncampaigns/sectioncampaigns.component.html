@@ -75,11 +75,16 @@
         <header>
           <h2 style="color: white">{{ items[2].title }}</h2>
         </header>
-        <div>
+        <div class="carousel__content--center">
           <div>
             <img [src]="items[2].image" alt="Imagen Productos Eafitenses" />
             <h3 style="height: 60px">{{ items[2].campaing }}</h3>
           </div>
+          <img
+            [ngStyle]="{ 'border-radius': 0 }"
+            [src]="items[2].imageInfo"
+            alt="Imagen informacion Productos Eafitenses"
+          />
         </div>
         <p style="color: white">{{ items[2].description }}</p>
         <span></span>
