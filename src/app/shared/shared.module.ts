@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ComponentsModule } from './components/components.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { MaterialModule } from './material.module'
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     FontAwesomeModule,
     NgbCarouselModule
   ],
-  exports: [ComponentsModule],
+  exports: [ComponentsModule, MaterialModule],
   declarations: [
 
   ]
