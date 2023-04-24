@@ -1,18 +1,19 @@
 .anchor__donations {
-  background-color: #A7D9DE;
-  border: 1px solid #2C6F76;
+  color: white;
+  background-color: #09394c;
+  border: 1px solid;
   border-radius: 0.5em;
   padding: 0.3em;
   width: fit-content;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-  transition: all .1s ease;
+  transition: all 0.1s ease;
   font-weight: 400;
   font-size: 1.5em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
   &:hover {
     text-decoration: underline;
     cursor: pointer;
-    background-color: #7FCCD3;
+    background-color: #7fccd3;
   }
 }

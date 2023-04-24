@@ -1,11 +1,10 @@
-
 export interface IcarouselItem {
   id: number;
   title: string;
   campaing: string;
   image?: string;
+  imageInfo?: string;
   description: string;
-  videoUrl?: any;
   date?: string;
   link?: string;
   order?: number;
