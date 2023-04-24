@@ -1,2 +1,102 @@
-
-<app-sectioncertificate></app-sectioncertificate>
+<section class="container">
+  <form (ngSubmit)="next()">
+    <img class="container__image" [src]="logo" alt="Logo Filantropía">
+    <div class="container__donations" *ngIf="step == 1">
+      <h3> {{ title }} </h3>
+      <p>Con tu apoyo a una de nuestras iniciativas generas oportunidades a través de la educación!</p>
+      <button type="button" (click)="next()">Dona ahora</button>
+      <p>¿Eres una empresa y quieres donar?</p>
+      <button type="button" (click)="nextContact()">Contáctanos</button>
+      <span class="container__footer"> {{ footer }} </span>
+    </div>
+    <div class="container__step2" *ngIf="step == 2">
+      <h3> {{ title }} </h3>
+      <p [style.text-align]="'left'">Ingresa tus datos:</p>
+      <div class="container__form">
+        <input class="container__control" type="text" placeholder="Nombre(s)">
+        <input class="container__control" type="text" placeholder="Apellidos">
+        <input class="container__control" type="tel" placeholder="+57 320-750-2370"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <select class="container__control" name="type-document">
+          <option value="type" selected disabled>Tipo de documento</option>
+          <option value="identity-card">Tarjeta de identidad</option>
+          <option value="citizenship-card">Cédula de ciudadanía</option>
+          <option value="Foreigner-ID">Cédula de extranjería</option>
+        </select>
+        <input class="container__control" type="number" placeholder="# Documento">
+        <input class="container__control" type="email" placeholder="Correo electrónico">
+      </div>
+      <div class="container__terms">
+        <input type="checkbox" id="temrs" name="accept-termns">
+        <label for="temrs">He leído y acepto el aviso de privacidad y política de protección
+          de datos personales</label>
+      </div>
+      <div class="container__actions">
+        <button type="button" (click)="back()">Volver</button>
+        <button type="button" (click)="next()">Siguiente</button>
+      </div>
+      <span class="container__footer"> {{ footer }} </span>
+    </div>
+    <div class="container__donations" *ngIf="step == 3">
+      <h3> {{ title }} </h3>
+      <p [ngStyle]="{'text-align': 'left', 'font-size.px': 24}">Selecciona tu donación:</p>
+      <div class="container__final">
+        <div>
+          <select name="causes" [style.margin-bottom.px]="18">
+            <option value="type" selected disabled>Selecciona el fondo</option>
+            <option value="mensual">Fondo becas</option>
+            <option value="trimestral">Fondo cultura</option>
+            <option value="semestral">Fondo deporte</option>
+            <option value="semestral">Fondo Investigación</option>
+          </select>
+          <mat-slide-toggle>Recurrencia</mat-slide-toggle>
+        </div>
+        <div>
+          <input type="number" placeholder="Monto (COP)" [style.margin-bottom.px]="18">
+          <select name="recurrencet">
+            <option value="type" selected disabled>Selecciona recurrencia</option>
+            <option value="mensual">Mensual</option>
+            <option value="trimestral">Trimestral</option>
+            <option value="semestral">Semestral</option>
+          </select>
+        </div>
+      </div>
+      <div class="container__certificate">
+        <p>¿Desea recibir certificado?</p>
+        <div class="container__radio">
+          <label for="Si">Si</label>
+          <input type="radio" id="Si" name="Si" value="Si">
+          <label for="No">No</label>
+          <input type="radio" id="No" name="No" value="No">
+        </div>
+      </div>
+      <div class="container__actions">
+        <button type="button" (click)="back()">Volver</button>
+        <button type="button">Ir a pagar</button>
+      </div>
+      <span class="container__footer"> {{ footer }} </span>
+    </div>
+    <div class="container__donations" *ngIf="stepContact == 1">
+      <h3> {{ title }} </h3>
+      <p [style.text-align]="'left'">Contáctanos al WhatsApp o déjanos tus datos:</p>
+      <div class="container__contact">
+        <div class="container__enlace">
+          <a href="">
+            <img  class="container__enlace--image" src="../../../assets/image/img-whatsapp.png" alt="Logo de whatsapp">
+            <p>Enlace a WhatsApp</p>
+          </a>
+        </div>
+        <div>
+          <input type="text" placeholder="Nombre de la empresa">
+          <input type="tel" placeholder="+57 320-750-2370" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <input type="email" placeholder="Correo electrónico">
+        </div>
+      </div>
+      <div class="container__actions">
+        <button type="button" (click)="backContact()">Volver</button>
+        <button type="button">Enviar</button>
+      </div>
+      <span class="container__footer"> {{ footer }} </span>
+    </div>
+  </form>
+</section>
