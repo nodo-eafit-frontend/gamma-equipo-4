@@ -1,23 +1,23 @@
 .section__causes {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #54B6BF;
   position: relative;
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 
   &--up {
     width: inherit;
     height: 40%;
     background-color: #FFFEF8;
-    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     position: relative;
 
     h1 {
-      font-weight: 700;
+      font-weight: 900;
       font-size: 50px;
       text-align: center;
       margin-top: 25px;

@@ -1,6 +1,6 @@
 .accordion {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #59c1bd;
 
   &__title {
@@ -11,7 +11,7 @@
     h2 {
       height: inherit;
       font-family: "Poppins", sans-serif;
-      font-size: 40px;
+      font-size: 50px;
       font-weight: 900;
       text-align: center;
       padding: 4px;
@@ -61,4 +61,8 @@
       }
     }
   }
+}
+
+:host ::ng-deep .mat-expansion-panel {
+  border-radius: 14px !important;
 }

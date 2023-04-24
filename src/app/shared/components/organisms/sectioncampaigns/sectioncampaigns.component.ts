@@ -33,7 +33,7 @@ export class SectioncampaignsComponent implements OnInit {
   @Input() items: IcarouselItem[] = [
     {
       id: 1,
-      title: 'CAMPAÑAS EAFITENSES',
+      title: 'Campañas Eafitenses',
       campaing: 'VAMOS PA LANTE',
       description:
         'Con tus aportes logramos que más jovenes continuen con sus estudios universitarios',
@@ -44,7 +44,7 @@ export class SectioncampaignsComponent implements OnInit {
     },
     {
       id: 2,
-      title: 'CAMPAÑAS EAFITENSES',
+      title: 'Campañas Eafitenses',
       campaing: 'GIVING DAY',
       description:
         'Juntos logramos posibilidades que transforman vidas ¡Gracias por volar con nosotros!',
@@ -55,7 +55,7 @@ export class SectioncampaignsComponent implements OnInit {
     },
     {
       id: 3,
-      title: 'CAMPAÑAS EAFITENSES',
+      title: 'Campañas Eafitenses',
       campaing: 'Productos con sentido EAFITENSE',
       description:
         'Por la compra de nuestros productos apoyas al fondo de becas universitarias',

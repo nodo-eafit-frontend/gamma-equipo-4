@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import {
   faAngleUp,
   faAngleDown,
@@ -15,6 +15,8 @@ export class NavbarComponent {
   faAngleUp = faAngleUp;
   faCircleXmark = faCircleXmark;
   isOpen = false;
+
+  @ViewChild("content") sectionCertificate!: ElementRef;
 
   navbar = {
     logo: {

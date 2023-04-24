@@ -7,7 +7,7 @@
     </div>
     <div class="navbar__items">
       <a routerLink="/donations"> {{ navbar.donate }} </a>
-      <a routerLink=""> {{ navbar.certificate }} </a>
+      <a href=""> {{ navbar.certificate }} </a>
       <a routerLink=""> {{ navbar.frequentQuestions }} </a>
       <button (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #reportsOverlay="cdkOverlayOrigin"> {{ navbar.reports }}
       </button>

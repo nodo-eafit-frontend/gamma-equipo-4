@@ -1,11 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import {MatCardModule} from '@angular/material/card';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { OverlayModule } from '@angular/cdk/overlay';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material.module';
@@ -27,19 +23,15 @@ import { SectioncertificateComponent } from './organisms/sectioncertificate/sect
     AnchordonationsComponent,
     CardscausesComponent,
     SectioncausesComponent,
-    SectioncampaignsComponent,
     SectionquestionsComponent,
-    SectioncertificateComponent
+    SectioncertificateComponent,
+    SectioncampaignsComponent
   ],
   imports: [
     CommonModule,
-    MatCardModule,
     RouterModule,
     FontAwesomeModule,
-    OverlayModule,
     NgbCarouselModule,
-    MatExpansionModule,
-    MatStepperModule,
     MatFormFieldModule,
     ReactiveFormsModule,
     MaterialModule

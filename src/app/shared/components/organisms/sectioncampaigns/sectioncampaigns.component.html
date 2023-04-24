@@ -18,7 +18,10 @@
         <div class="carousel__content--center">
           <div>
             <img [src]="items[0].image" alt="Image Vamos Pa Lante" />
-            <h3>{{ items[0].campaing }}</h3>
+            <h3  [ngStyle]="
+            {'font-size.px': 24,
+             'height.px': 60,
+            'margin-left.%': 5 }" >{{ items[0].campaing }}</h3>
           </div>
           <iframe
             width="560"
@@ -48,7 +51,10 @@
         <div class="carousel__content--center">
           <div>
             <img [src]="items[1].image" alt="Image Vamos Pa Lante" />
-            <h3>{{ items[1].campaing }}</h3>
+            <h3 [ngStyle]="
+            {'font-size.px': 36,
+             'height.px': 70,
+            'padding-top.px': 4 }">{{ items[1].campaing }}</h3>
           </div>
           <iframe
             width="560"
@@ -60,7 +66,9 @@
             allowfullscreen
           ></iframe>
         </div>
-        <p style="color: white">{{ items[1].description }}</p>
+        <p [ngStyle]="
+        {'color': 'white',
+         'width.%': 60}">{{ items[1].description }}</p>
         <span style="color: white"> {{ items[1].date }} </span>
       </section>
     </ng-container>
@@ -81,7 +89,7 @@
             <h3 style="height: 60px">{{ items[2].campaing }}</h3>
           </div>
           <img
-            [ngStyle]="{ 'border-radius': 0 }"
+            [ngStyle]="{ 'border-radius.px': 8 }"
             [src]="items[2].imageInfo"
             alt="Imagen informacion Productos Eafitenses"
           />

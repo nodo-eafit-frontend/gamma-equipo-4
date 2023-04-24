@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SectioncausesComponent {
 
-  title = 'las causas que nos motivan';
+  title = 'Las causas que nos motivan';
 
 }
